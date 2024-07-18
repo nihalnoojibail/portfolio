@@ -2,33 +2,6 @@ body{
 	margin: 0;
 	padding: 0;
 }
-@media (max-width: 768px) { 
-    body {
-        font-size: 14px; 
-    }
-
-    .project-title {
-        position: static; 
-        text-align: center; 
-    }
-
-    .pp {
-        position: static; 
-        width: 100%;
-        height: auto;
-        box-shadow: none;
-    
-
-@media (max-width: 480px) { 
-    .container h1 {
-        font-size: 40px;
-
-    .nav {
-        display: none; 
-    }
-
-    
-}
 
 h1{
 	font-size: 70px;
