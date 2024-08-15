@@ -414,6 +414,7 @@ img.skill1{
 #skills{
 	width: 100%;
 	height: 110vh;
+	margin-bottom: 130px; /* Add space below the section */
 	position: relative;
 }
 .sidebar3{
@@ -421,7 +422,7 @@ img.skill1{
 	top: 5%;
 	right: 0;
 	width: 10%;
-	height: 80%;
+	height: 100%;
 	background-color:#8093C6;
 }
 .strip3{
@@ -437,7 +438,7 @@ img.skill1{
 	top: 5%;
 	left: 0;
 	width: 10%;
-	height: 80%;
+	height: 100%;
 	background-color:#8093C6;
 }
 
@@ -503,7 +504,7 @@ img.skill1{
     left: 0;
     width: 100%;
     height: 15px;
-    background-color: rgb(174, 181, 255);
+    background-color: #aeb5ff;
     box-shadow: 0px 8px 15px rgba(0,0,0,.4);
     border-radius: 1000px;
 }
@@ -597,6 +598,85 @@ img.skill1{
 		transform: translateY(300px);
 	}
 }
+/* Certification */
+/* Overall section styling for certifications */
+.certifications-list {
+    width: 400px; /* Ensure the width fits your design */
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    
+}
+
+/* Style for each certification item */
+.certification-item {
+    position: relative;
+    margin-bottom: 30px; /* Space below each certification item */
+    transition: margin-bottom 0.5s ease; /* Smooth transition for margin change */
+	
+	}
+
+/* Hidden button by default */
+.certificate-link {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position below the certification item */
+    background-color: #808af6;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+	transition: opacity 5s ease, visibility 5s ease; 
+    white-space: nowrap; /* Ensure button text does not wrap */
+    z-index: 10; /* Ensure the button is above other content */
+	left: 3%;
+}
+
+.certification-item:hover .certificate-link,
+.certificate-link:hover {
+    display: block;
+    top: calc(100% + 15px); /* Position the button below with a slight margin */
+    opacity: 1;
+}
+
+/* Maintain button visibility when hovering over the button itself */
+.certification-item:hover {
+    margin-bottom: 65px; /* Increase space below item to accommodate button */
+}
+
+
+/* Button hover effect */
+.certificate-link:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+	
+}
+
+.experience {
+    width: 1000px; /* Ensure the width fits your design */
+    position: absolute;
+    top: 80%;
+    left: 15%;
+}
+/* Styling for the date */
+.date {
+    font-size: 0.95rem; /* Smaller font size */
+    font-style: italic; /* Italicize the date */
+    color: #525252; /* Slightly different color */
+    margin-top: -2px; /* Adjust spacing to bring it closer to the previous line */
+	padding: 2px 13px;
+}
+
+/* Styling for the description */
+.description {
+    font-size: 1rem; /* Smaller font size */
+    margin-top: 3px ; /* Slight space above the description */
+    color: #393939; /* Standard text color */
+	padding: 0px 10px;
+	
+	}
+
+
 /* projects */
 #projects{
 	width: 100%;
